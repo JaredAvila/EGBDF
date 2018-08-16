@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EGBDF</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Image and text -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="http://www.selfmadeprogramer.com">
+                <img src="smp.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                selfmadeprogramer.com
+            </a>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Alternative Memory Aid
+                            </button>
+                        </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Spell 'Egg', but don't finish!
+                            <p>'<em><span>E</span></em>', '<em><span>G</span></em>', <em><span>B</span></em>ut <em><span>D</span></em>on't <em><span>F</span></em>inish...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--add more if you'd like... this is the nav-bar-->
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col imgCol">
+                    <img src="treble_clef.png" alt="music pic">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Let's play</h1>
+                        </div>
+                    </div>
+                    <div class="row"><div class="col">
+                        <button type="button" class="btn btn-outline-primary btn-block btnE">E</button>
+                    </div></div>
+                    <div class="row"><div class="col">
+                        <button type="button" class="btn btn-outline-success btn-block btnG">G</button>
+                    </div></div>
+                    <div class="row"><div class="col">
+                        <button type="button" class="btn btn-outline-danger btn-block btnB">B</button>
+                    </div></div>
+                    <div class="row"><div class="col">
+                        <button type="button" class="btn btn-outline-warning btn-block btnD">D</button>
+                    </div></div>
+                    <div class="row"><div class="col">
+                        <button type="button" class="btn btn-outline-info btn-block btnF">F</button>
+                    </div></div>
+                </div>
+                <div class="col">
+                    <div id="emptyBox"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row"><div class="col every">
+                        <p>Entire</p>
+                    </div></div>
+                    <div class="row"><div class="col gen">
+                        <p>generation</p>
+                    </div></div>
+                    <div class="row"><div class="col blows">
+                        <p>blows.</p>
+                    </div></div>
+                    <div class="row"><div class="col dammit">
+                        <p>DAMMIT</p>
+                    </div></div>
+                    <div class="row"><div class="col fb">
+                        <p>Facebook</p>
+                    </div></div>
+                    <div class="row"><div class="col demitri">
+                        <h4>-Demitri Martin</h4>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <script>
+    
+        $(document).ready(function(){
+
+
+            //jQuery goes here-----------------------
+            $('.btnE').on('click', function(){
+                $('.every').toggle();
+            });
+            $('.btnE').on('mouseover', function(){
+                $('.every').show();
+                $('.btnE').on('mouseleave', function(){
+                    $('.every').hide();
+                });
+            });
+            $('.btnG').on('click', function(){
+                $('.gen').toggle();
+            });
+            $('.btnG').on('mouseover', function(){
+                $('.gen').show();
+                $('.btnG').on('mouseleave', function(){
+                    $('.gen').hide();
+                });
+            });
+            $('.btnB').on('click', function(){
+                $('.blows').toggle();
+            });
+            $('.btnB').on('mouseover', function(){
+                $('.blows').show();
+                $('.btnB').on('mouseleave', function(){
+                    $('.blows').hide();
+                });
+            });
+            $('.btnD').on('click', function(){
+                $('.dammit').toggle();
+            });
+            $('.btnD').on('mouseover', function(){
+                $('.dammit').show();
+                $('.btnD').on('mouseleave', function(){
+                    $('.dammit').hide();
+                });
+            });
+            $('.btnF').on('click', function(){
+                $('.fb').toggle();
+            });
+            $('.btnF').on('mouseover', function(){
+                $('.fb').show();
+                $('.btnF').on('mouseleave', function(){
+                    $('.fb').hide();
+                });
+            });
+
+
+
+        });
+    
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
